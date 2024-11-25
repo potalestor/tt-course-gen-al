@@ -107,6 +107,9 @@ def get_api_key(env_var_name: str) -> str:
 
 
 def main():
+    # curl -X GET \
+    #      "https://datasets-server.huggingface.co/rows?dataset=kmfoda%2Fbooksum&config=default&split=train&offset=0&limit=100" > book_sum_dataset.txt
+
     # Load the dataset
     dataset = load_dataset(DATASET_FILE_PATH)
 
